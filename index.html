@@ -4,26 +4,52 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>rclone Home Lab</title>
-<style>
-body{font-family:system-ui,Segoe UI,Arial,sans-serif;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.6;color:#222}
-h1{font-size:28px}a{color:#0b63c4}
-</style>
+<meta name="description" content="Aplicativo de uso pessoal para backup de um servidor doméstico no Google Drive do próprio dono.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☁️</text></svg>">
+<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<h1>rclone Home Lab</h1>
-<p><strong>rclone Home Lab</strong> é um aplicativo de uso pessoal e doméstico.
-Ele não é oferecido ao público.</p>
-<p>O aplicativo é o programa de código aberto <a href="https://rclone.org">rclone</a>,
-sem modificações, rodando em um servidor caseiro (Raspberry Pi). Ele envia, automaticamente,
-cópias de segurança (backups) das configurações e dos dados do próprio servidor para a conta
-Google Drive do dono do servidor.</p>
-<h2>Como usa os dados do Google</h2>
-<ul>
-<li>Acessa somente o Google Drive da conta do próprio dono.</li>
-<li>Usa a permissão restrita aos arquivos que o próprio aplicativo criou.</li>
-<li>Não lê, não compartilha e não vende dados de nenhuma outra pessoa.</li>
-</ul>
-<p><a href="privacidade.html">Política de privacidade</a></p>
-<p>Contato: home.lab.crispim@gmail.com</p>
+<header class="topo">
+  <div class="icone">☁️</div>
+  <h1>rclone Home Lab</h1>
+  <p>Backup automático de um servidor doméstico para o Google Drive do próprio dono. Uso pessoal, não oferecido ao público.</p>
+</header>
+
+<main>
+  <section class="cartao">
+    <h2>O que é</h2>
+    <p>O <b>rclone Home Lab</b> é o programa de código aberto <a href="https://rclone.org">rclone</a>,
+    sem modificações, rodando em um servidor caseiro (Raspberry Pi). Toda semana ele envia
+    cópias de segurança das configurações e dos dados do servidor para a conta Google Drive do dono.</p>
+  </section>
+
+  <section class="cartao">
+    <h2>Como funciona</h2>
+    <div class="grade">
+      <div class="item"><b>1. Gera os backups</b><span>O servidor compacta e confere os próprios dados e configurações.</span></div>
+      <div class="item"><b>2. Envia ao Drive</b><span>O rclone grava os arquivos numa pasta do Google Drive do dono.</span></div>
+      <div class="item"><b>3. Guarda o histórico</b><span>Cada backup fica numa pasta com data e hora, pronto para restaurar.</span></div>
+    </div>
+  </section>
+
+  <section class="cartao">
+    <h2>Como usa os dados do Google</h2>
+    <ul>
+      <li><span class="ok">✓</span> Acessa somente o Google Drive da conta do próprio dono.</li>
+      <li><span class="ok">✓</span> Usa a permissão restrita aos arquivos que o próprio aplicativo criou.</li>
+      <li><span class="ok">✓</span> Não lê, não compartilha e não vende dados de nenhuma outra pessoa.</li>
+    </ul>
+  </section>
+
+  <section class="cartao">
+    <h2>Mais informações</h2>
+    <div class="botoes">
+      <a class="botao primario" href="privacidade.html">Política de privacidade</a>
+      <a class="botao" href="mailto:home.lab.crispim@gmail.com">Contato</a>
+    </div>
+  </section>
+</main>
+
+<footer>rclone Home Lab · uso pessoal · contato: home.lab.crispim@gmail.com</footer>
 </body>
 </html>
